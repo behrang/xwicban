@@ -1,0 +1,59 @@
+termb: nɑfan
+termx: نفان
+
+
+
+fa:
+  - term: ملت
+    root: عربی
+
+en:
+  - term: nation
+
+
+
+defb: >
+  (n.)Ʌnbuh e bozorg iy az mɑrdom e ayekide ba neƶad o tɑbar e hɑmdar,
+  tarix, fɑrhɑng, ya zɑban e hɑmdar, ke dɑr kecvɑr ya sɑrzɑmin iy viƶe mi zivɑnd.
+defx: >
+  (ن.)انبوه بزرگ ای از مردم آیکیده با نژاد و تبار همدار (مشترک)،
+  تاریخ، فرهنگ، یا زبان همدار، که در کشور یا سرزمین ای ویژه می زیوند.
+
+
+
+refb: >
+  Vaƶename ie Ricenasik e Ʌxtɑrnasi-Ʌxtɑrfizika, M. Heydɑri-Mɑlayeri.
+  An Etymological Dictionary of Astronomy and Astrophysics, M. Heydari-Malayeri
+refx: واژه نامه ء ریشه ناسیک اخترناسی-اخترفیزیکا، م. حیدری-ملایری
+
+
+
+rel:
+  - mardom
+  - paayram
+  - vis
+  - xaandaan
+  - dudmaan
+  - zantu
+  - xaanevaade
+  - xaanevaar
+
+
+
+der:
+  - nafaaniki
+  - nafaanik
+  - nafaanaane
+  - nafaanaan
+  - nafaanixtan
+  - nafaanizec
+  - nafaanixte
+  - nafaanixtaar
+
+
+
+see:
+  - andarnafaanik
+  - nafaanikaadi
+  - aayekide-nafaanaan
+  - saazmaan-e-nafaanaan-e-ayekide

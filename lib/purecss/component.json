@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "styles": [
+    "base.css",
+    "grids-core.css",
+    "grids-units.css",
+    "grids-responsive.css",
+    "menus-core.css"
+  ]
+}

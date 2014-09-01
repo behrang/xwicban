@@ -1,0 +1,24 @@
+extends ./layout.jade
+
+block title
+  | Xwicban &middot; خویشبان
+
+block content
+  h1.b.pure-u-1.pure-u-sm-1-2 Vaƶegan
+  h1.x.pure-u-1.pure-u-sm-1-2 واژگان
+  each item in terms
+    .row.pure-u-1
+
+      .b.pure-u-1-4
+        a(href='../#{item.file}/')= item.termb
+
+      .b.pure-u-1-4
+        for enItem in item.en
+          a(href='../#{item.file}/')= enItem.term
+
+      .x.pure-u-1-4
+        for faItem in item.fa
+          a(href='../#{item.file}/')= faItem.term
+
+      .x.pure-u-1-4
+        a(href='../#{item.file}/')= item.termx

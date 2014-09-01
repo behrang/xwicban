@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title
+      block title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/build.css')
+  body
+    include icons.svg
+
+    header.pure-g
+      h3.b.pure-u-1-2
+        a(href='/') Xwicban
+      h3.x.pure-u-1-2
+        a(href='/') خویشبان
+
+    main.pure-g
+      block content
+
+    footer
+      a.menu-button(href='#menu')
+        svg.icon.icon-menu(viewBox='0 0 32 32')
+          use(xlink:href='#icon-menu')
+      nav.pure-menu.pure-menu-open#menu
+        ul
+          li.b
+            a(href='/b-order/') Fehrest e Ʌlefba yi
+          li.x
+            a(href='/x-order/') فهرست الفبایی

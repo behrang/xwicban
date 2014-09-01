@@ -1,0 +1,62 @@
+extends ./layout.jade
+
+mixin list(list)
+  ul
+    each item in list
+      li= item.term
+        if item.root
+          small #{''} (#{item.root})
+
+mixin table(b, x, list)
+  if list.length
+    h4.b.pure-u-1-2= b
+    h4.x.pure-u-1-2= x
+    each item in list
+      .row.pure-u-1
+
+        .b.pure-u-1-4
+          a(href='../#{item.file}/')= item.termb
+
+        .b.pure-u-1-4
+          for enItem in item.en
+            a(href='../#{item.file}/')= enItem.term
+
+        .x.pure-u-1-4
+          for faItem in item.fa
+            a(href='../#{item.file}/')= faItem.term
+
+        .x.pure-u-1-4
+          a(href='../#{item.file}/')= item.termx
+
+block title
+  | #{termb} &middot; #{termx}
+
+block content
+  h1.b.pure-u-1.pure-u-sm-1-2= termb
+  h1.x.pure-u-1.pure-u-sm-1-2= termx
+
+  h2.b.pure-u-1-2
+    +list(en)
+  h2.x.pure-u-1-2
+    +list(fa)
+
+  if defb
+    p.b.pure-u-1.pure-u-sm-1-2= defb
+  if defx
+    p.x.pure-u-1.pure-u-sm-1-2= defx
+
+  +table('Ʌmvanideha', 'اموانیده‌ها', rel)
+
+  +table('Vaxɑnideha', 'واخنیده‌ها', der)
+
+  +table('Digɑrha', 'دیگرها', see)
+
+  if refb
+    .b.pure-u-1.pure-u-sm-1-2
+      h4 Bazbord
+      p= refb
+
+  if refx
+    .x.pure-u-1.pure-u-sm-1-2
+      h4 بازبرد
+      p= refx

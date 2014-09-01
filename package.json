@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "dependencies": {
+    "co": "^3.1.0",
+    "component": "^1.0.0-rc5",
+    "jade": "^1.5.0",
+    "js-yaml": "^3.1.0",
+    "marked": "^0.3.2",
+    "mkdirp": "^0.5.0",
+    "rimraf": "^2.2.8",
+    "thunkify": "^2.1.2"
+  },
+  "devDependencies": {
+    "serve": "^1.4.0"
+  }
+}
